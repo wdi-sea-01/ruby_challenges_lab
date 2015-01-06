@@ -3,6 +3,7 @@ $total = 0.0;
 def prompt_for_action
     puts "What calculation would you like to do? (add, sub, mult, div, clear, end)"
     action = gets.chomp.downcase
+
     case action
     when "add", "sub", "mult", "div"
         prompt_for_numbers

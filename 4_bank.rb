@@ -21,7 +21,7 @@ def show_prompt
 end
 
 def check_balance
-    puts "Your current balance is #{$balance}. "
+    puts "Your current balance is %.2f " % $balance
 end
 
 def deposit

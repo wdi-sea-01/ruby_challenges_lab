@@ -6,7 +6,7 @@ inputNumber = -1
 tries = 0
 
 def guess
-    rand($lower..$upper)
+    $lower + (($upper - $lower) / 2)
 end
 
 
@@ -17,8 +17,10 @@ while(inputNumber != number) do
     puts "You guessed #{inputNumber}"
     if(number < inputNumber)
         puts "The number is lower than #{inputNumber}"
+        $upper = inputNumber
     elsif(number > inputNumber)
         puts "The number is higher than #{inputNumber}"        
+        $lower = inputNumber
     end
 
     tries += 1
