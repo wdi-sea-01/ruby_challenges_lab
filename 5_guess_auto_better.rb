@@ -1,5 +1,5 @@
 $lower = 0
-$upper = 100
+$upper = 9999999999999999999999999
 
 number = rand($lower..$upper)
 inputNumber = -1
@@ -7,10 +7,11 @@ tries = 0
 
 def guess
     $lower + (($upper - $lower) / 2)
+    #rand($lower..$upper)
 end
 
 
-puts "Guess a number between 1 and 100"
+puts "Guess a number between 1 and #{$upper}"
 
 while(inputNumber != number) do
     inputNumber = guess
