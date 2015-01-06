@@ -46,7 +46,7 @@ until word == find
 end
 puts "we found #{find} at index #{idx} in #{steps} steps."
 
-steps = 1
+steps = "?"
 idx = a.index(find)
 puts "INDEX METHOD"
 puts "we found #{find} at index #{idx} in #{steps} steps."
